@@ -7,6 +7,44 @@
     <title>CSS EM REM PX</title>
 </head>
 <body>
+    <div class="wrapper">
+        Привет (16px)
+        <div class="wrapper__section" style="font-size: 1em;">
+            Привет (1em =  1 * 16px)
+        </div>
+        <div class="wrapper__section" style="font-size: 1.5em;">
+            Привет (1.5em =  1.5 * 16px)
+        </div>
+        <div class="wrapper__section" style="font-size: 2em;">
+            Привет (2em =  2 * 16px)
+            <div class="wrapper__section" style="font-size: 1em;">
+                Привет (1em =  1 * 32px)
+            </div>
+            <div class="wrapper__section" style="font-size: 2em;">
+                Привет (2em =  2 * 32px)
+            </div>
+        </div>
+    </div>
 
+    <style>
+
+        .wrapper {
+            font-family: sans-serif;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 30px;
+            background: aqua;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .wrapper__section {
+            padding: 20px;
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+
+    </style>
 </body>
 </html>
